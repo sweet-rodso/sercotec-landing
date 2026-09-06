@@ -1,0 +1,38 @@
+[
+  {
+    "id": "t1",
+    "nombre": "Marcela Vidal",
+    "empresa": "Panadería El Trigal",
+    "cargo": "Propietaria",
+    "testimonio": "Gracias al acompañamiento del Centro pudimos ordenar nuestras finanzas y hoy vendemos un 30% más que antes.",
+    "avatar": "/img/testimonio-1.jpg",
+    "calificacion": 5
+  },
+  {
+    "id": "t2",
+    "nombre": "Jorge Rain",
+    "empresa": "Distribuidora Rain Ltda.",
+    "cargo": "Gerente General",
+    "testimonio": "El taller de marketing digital nos abrió las puertas a nuevos clientes que ni sabíamos que existían.",
+    "avatar": "/img/testimonio-2.jpg",
+    "calificacion": 5
+  },
+  {
+    "id": "t3",
+    "nombre": "Carolina Muñoz",
+    "empresa": "Estudio Contable Muñoz",
+    "cargo": "Fundadora",
+    "testimonio": "La asesoría técnica fue clave para digitalizar procesos que llevábamos años haciendo a mano.",
+    "avatar": "/img/testimonio-3.jpg",
+    "calificacion": 4
+  },
+  {
+    "id": "t4",
+    "nombre": "Esteban Farías",
+    "empresa": "Taller Mecánico Farías",
+    "cargo": "Dueño",
+    "testimonio": "Nos conectaron con un programa de financiamiento que nos permitió renovar nuestro equipamiento.",
+    "avatar": "/img/testimonio-4.jpg",
+    "calificacion": 5
+  }
+]
