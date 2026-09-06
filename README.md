@@ -6,6 +6,8 @@ Proyecto individual — **Evaluación Sumativa Unidad 3, Desarrollo Frontend**
 
 **Autor:** Rodrigo Alexis Soto Cifuentes (rodalsoto@gmail.com)
 
+**Repositorio:** https://github.com/sweet-rodso/sercotec-landing
+
 ## 1. Descripción del problema y la solución
 
 El sitio original de SERCOTEC presenta la información de sus servicios,
