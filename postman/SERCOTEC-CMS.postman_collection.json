@@ -1,0 +1,151 @@
+{
+  "info": {
+    "name": "SERCOTEC Centro de Negocios — CMS API",
+    "description": "Colección para administrar el contenido de la landing page (servicios, testimonios, FAQ, nosotros) y revisar los mensajes de contacto recibidos. Las operaciones de escritura requieren el header X-Api-Key definido en el backend (.env -> CMS_API_KEY).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:4000/api" },
+    { "key": "api_key", "value": "cambia-esta-clave-por-una-propia" }
+  ],
+  "item": [
+    {
+      "name": "Salud del servidor",
+      "request": { "method": "GET", "url": "{{base_url}}/health" }
+    },
+    {
+      "name": "Servicios",
+      "item": [
+        { "name": "Listar servicios", "request": { "method": "GET", "url": "{{base_url}}/services" } },
+        { "name": "Obtener servicio por ID", "request": { "method": "GET", "url": "{{base_url}}/services/acompanamiento-preventivo" } },
+        {
+          "name": "Crear servicio",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" }, { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/services",
+            "body": { "mode": "raw", "raw": "{\n  \"titulo\": \"Nuevo servicio\",\n  \"descripcion\": \"Descripción del nuevo servicio ofrecido por el Centro.\",\n  \"categoria\": \"Gestión de negocios\",\n  \"imagen\": \"/img/servicio-nuevo.jpg\"\n}" }
+          }
+        },
+        {
+          "name": "Actualizar servicio",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" }, { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/services/acompanamiento-preventivo",
+            "body": { "mode": "raw", "raw": "{\n  \"descripcion\": \"Texto actualizado desde Postman.\"\n}" }
+          }
+        },
+        {
+          "name": "Eliminar servicio",
+          "request": {
+            "method": "DELETE",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" } ],
+            "url": "{{base_url}}/services/REEMPLAZAR-ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Testimonios",
+      "item": [
+        { "name": "Listar testimonios", "request": { "method": "GET", "url": "{{base_url}}/testimonials" } },
+        {
+          "name": "Crear testimonio",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" }, { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/testimonials",
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Nombre Apellido\",\n  \"empresa\": \"Nombre de la empresa\",\n  \"cargo\": \"Cargo\",\n  \"testimonio\": \"Texto del testimonio del cliente.\",\n  \"calificacion\": 5\n}" }
+          }
+        },
+        {
+          "name": "Actualizar testimonio",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" }, { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/testimonials/REEMPLAZAR-ID",
+            "body": { "mode": "raw", "raw": "{\n  \"testimonio\": \"Texto actualizado.\"\n}" }
+          }
+        },
+        {
+          "name": "Eliminar testimonio",
+          "request": {
+            "method": "DELETE",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" } ],
+            "url": "{{base_url}}/testimonials/REEMPLAZAR-ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Preguntas frecuentes",
+      "item": [
+        { "name": "Listar FAQ", "request": { "method": "GET", "url": "{{base_url}}/faq" } },
+        {
+          "name": "Crear pregunta",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" }, { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/faq",
+            "body": { "mode": "raw", "raw": "{\n  \"pregunta\": \"¿Nueva pregunta?\",\n  \"respuesta\": \"Respuesta a la nueva pregunta.\"\n}" }
+          }
+        },
+        {
+          "name": "Actualizar pregunta",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" }, { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/faq/REEMPLAZAR-ID",
+            "body": { "mode": "raw", "raw": "{\n  \"respuesta\": \"Respuesta actualizada.\"\n}" }
+          }
+        },
+        {
+          "name": "Eliminar pregunta",
+          "request": {
+            "method": "DELETE",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" } ],
+            "url": "{{base_url}}/faq/REEMPLAZAR-ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nosotros",
+      "item": [
+        { "name": "Obtener datos institucionales", "request": { "method": "GET", "url": "{{base_url}}/about" } },
+        {
+          "name": "Actualizar datos institucionales",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" }, { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/about",
+            "body": { "mode": "raw", "raw": "{\n  \"mision\": \"Texto de misión actualizado desde Postman.\"\n}" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Contacto",
+      "item": [
+        {
+          "name": "Enviar formulario de contacto (público)",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{base_url}}/contact",
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Juan Pérez\",\n  \"correo\": \"juan@empresa.cl\",\n  \"empresa\": \"Empresa Ejemplo\",\n  \"servicio\": \"Gestión y Administración\",\n  \"mensaje\": \"Quisiera agendar una asesoría.\",\n  \"honeypot\": \"\"\n}" }
+          }
+        },
+        {
+          "name": "Listar mensajes recibidos (protegido)",
+          "request": {
+            "method": "GET",
+            "header": [ { "key": "X-Api-Key", "value": "{{api_key}}" } ],
+            "url": "{{base_url}}/contact"
+          }
+        }
+      ]
+    }
+  ]
+}
