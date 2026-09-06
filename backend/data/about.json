@@ -1,0 +1,14 @@
+{
+  "titulo": "Centro de Negocios Santiago SERCOTEC",
+  "mision": "Garantizar el correcto funcionamiento, sostenibilidad y eficiencia de los negocios de nuestros clientes mediante acompañamiento integral en gestión, innovación y fortalecimiento de capacidades.",
+  "vision": "Ser el aliado de referencia de las micro, pequeñas y medianas empresas de Santiago para crecer de forma sostenible y competitiva.",
+  "direccion": "Manuel Rodríguez Sur 749, Santiago (Metro Toesca)",
+  "correo": "centro.santiago@centrossercotec.cl",
+  "sitioOriginal": "https://sitios.sercotec.cl/centros-de-negocios/centro-de-desarrollo-de-negocios-santiago/",
+  "estadisticas": [
+    { "valor": 850, "etiqueta": "Empresas atendidas" },
+    { "valor": 120, "etiqueta": "Talleres realizados" },
+    { "valor": 14, "etiqueta": "Años de experiencia" },
+    { "valor": 6, "etiqueta": "Áreas de acompañamiento" }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "acompanamiento-preventivo",
+    "titulo": "Acompañamiento Preventivo",
+    "descripcion": "Asesorías periódicas que prolongan la vida útil de tu negocio y aumentan su productividad antes de que surjan problemas.",
+    "categoria": "Acompañamiento empresarial",
+    "imagen": "/img/servicio-preventivo.jpg",
+    "orden": 1
+  },
+  {
+    "id": "acompanamiento-correctivo",
+    "titulo": "Acompañamiento Correctivo",
+    "descripcion": "Resolución de dificultades o desafíos puntuales que afectan la gestión o el desarrollo de tu empresa.",
+    "categoria": "Acompañamiento empresarial",
+    "imagen": "/img/servicio-correctivo.jpg",
+    "orden": 2
+  },
+  {
+    "id": "gestion-administracion",
+    "titulo": "Gestión y Administración",
+    "descripcion": "Diagnósticos, planes de mejora, talleres especializados y seguimiento continuo en administración, finanzas y marketing digital.",
+    "categoria": "Gestión de negocios",
+    "imagen": "/img/servicio-gestion.jpg",
+    "orden": 3
+  },
+  {
+    "id": "innovacion",
+    "titulo": "Innovación y Procesos",
+    "descripcion": "Orientación y capacitación en procesos de innovación para modernizar la forma en que opera tu negocio.",
+    "categoria": "Gestión de negocios",
+    "imagen": "/img/servicio-innovacion.jpg",
+    "orden": 4
+  },
+  {
+    "id": "eficiencia-sostenibilidad",
+    "titulo": "Eficiencia y Sostenibilidad",
+    "descripcion": "Incorporación de herramientas digitales, optimización de procesos e implementación de estrategias de crecimiento sostenible.",
+    "categoria": "Eficiencia y sostenibilidad",
+    "imagen": "/img/servicio-eficiencia.jpg",
+    "orden": 5
+  },
+  {
+    "id": "vinculacion-empresarial",
+    "titulo": "Vinculación Empresarial",
+    "descripcion": "Espacios de networking, articulación con instituciones públicas y privadas, y acceso a programas de financiamiento.",
+    "categoria": "Vinculación empresarial",
+    "imagen": "/img/servicio-vinculacion.jpg",
+    "orden": 6
+  }
+]

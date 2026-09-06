@@ -1,0 +1,27 @@
+[
+  {
+    "id": "f1",
+    "pregunta": "¿Quiénes pueden acceder a los servicios del Centro de Negocios?",
+    "respuesta": "Cualquier micro, pequeña o mediana empresa formalizada o en proceso de formalización puede solicitar acompañamiento."
+  },
+  {
+    "id": "f2",
+    "pregunta": "¿Los servicios tienen costo?",
+    "respuesta": "La mayoría de las asesorías y talleres son gratuitos gracias al financiamiento de SERCOTEC. Algunos programas específicos pueden requerir cofinanciamiento."
+  },
+  {
+    "id": "f3",
+    "pregunta": "¿Cómo agendo una primera reunión?",
+    "respuesta": "Puedes escribirnos a través del formulario de contacto de este sitio o visitarnos directamente en Manuel Rodríguez Sur 749, Santiago."
+  },
+  {
+    "id": "f4",
+    "pregunta": "¿En qué comunas atienden?",
+    "respuesta": "Atendemos principalmente empresas de la Región Metropolitana, con foco en el sector centro de Santiago."
+  },
+  {
+    "id": "f5",
+    "pregunta": "¿Puedo acceder a más de un servicio al mismo tiempo?",
+    "respuesta": "Sí. El plan de acompañamiento se diseña según las necesidades de tu negocio y puede combinar varios servicios."
+  }
+]
